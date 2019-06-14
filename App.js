@@ -11,7 +11,6 @@ import {Platform, StyleSheet, Text, View, ScrollView} from 'react-native';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Toolbar } from 'react-native-material-ui';
-import { WebView } from 'react-native-webview';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -31,12 +30,10 @@ export default class App extends Component<Props> {
             leftElement="menu"
             centerElement="Santa Teresa High School"
           />
-          <WebView source={{ uri: 'https://facebook.github.io/react-native/' }} />
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
-          <WebView source ={{ uri: "https://www.instagram.com/p/ByEdUF6JOtr/"}} />
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
