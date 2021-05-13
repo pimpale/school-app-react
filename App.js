@@ -12,12 +12,7 @@ import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Toolbar } from 'react-native-material-ui';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+const schoolName = 'Santa Teresa'
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -28,7 +23,7 @@ export default class App extends Component<Props> {
         <Toolbar
             style={styles.toolbar}
             leftElement="menu"
-            centerElement="Santa Teresa High School"
+            centerElement=schoolName
           />
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
@@ -43,8 +38,6 @@ export default class App extends Component<Props> {
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
-          <Text style={styles.instructions}>To get started, edit App.js</Text>
-          <Text style={styles.instructions}>{instructions}</Text>
         </ScrollView>
         <ActionButton buttonColor="rgba(231,76,60,1)">
           <ActionButton.Item buttonColor='#9b59b6' title="New Task" onPress={() => console.log("notes tapped!")}>
